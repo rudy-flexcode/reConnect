@@ -1,8 +1,4 @@
-/* Footer styling */
 .footer {
-  position: absolute; /* Positionne le footer par rapport à la fenêtre */
-  bottom: 0; /* Le place tout en bas */
-  left: 0;
   width: 100%;
   background-color: #bfd0c1;
   padding: 10px;

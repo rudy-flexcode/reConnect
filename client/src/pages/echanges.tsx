@@ -5,7 +5,6 @@ import CardContainer from "../components/CardContainer";
 import WantedArticles from "../components/WantedArticles";
 import type { ArticleType } from "../lib/definition";
 
-
 const Echanges = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
   const [isWanted, setIsWanted] = useState<ArticleType[]>([]);

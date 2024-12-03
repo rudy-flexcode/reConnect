@@ -7,9 +7,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 // Import the main app component
 import App from "./App";
+import Details from "./pages/details";
 import Echanges from "./pages/echanges";
 // Import additional components for new routes
 import Home from "./pages/home";
+
 // Try creating these components in the "pages" folder
 
 // import About from "./pages/About";
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/echanges",
         element: <Echanges />,
+      },
+      {
+        path: "/details/:id",
+        element: <Details />,
+        loader: ({ params }) =>
+          fetch(
+            `https://api-re-connect-t3ln.vercel.app/api/resources/${params.id}`,
+          ),
       },
     ],
   },

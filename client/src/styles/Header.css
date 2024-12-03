@@ -2,15 +2,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 2% 0% 0%; /* Espace intérieur */
-  background-color: #fefefe; /* Couleur de fond */
+  padding: 0% 2% 0% 0%; 
+  background-color: #fefefe; 
 }
 
-/* Logo et Titre */
 header .logo-container {
   display: flex;
   align-items: center;
-  gap: 2%; /* Espace entre le logo et le titre */
+  gap: 2%; 
 }
 
 header img {
@@ -20,24 +19,19 @@ header img {
 header h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000000; /* Couleur principale */
+  color: #000000; 
 }
 
 /* Liens */
 header .nav-links {
   display: flex;
-  gap: 2rem; /* Espacement entre les liens */
+  gap: 2rem; 
 }
 
 header .nav-links h2 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #212529; /* Couleur des liens */
+  color: #212529; 
   cursor: pointer;
   transition: color 0.3s ease;
-}
-
-header .nav-links h2:hover {
-  color: #007bff; /* Couleur au survol */
-  text-decoration: underline;
 }

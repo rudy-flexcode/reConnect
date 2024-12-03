@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <div className="logo-container">
         <img src={Logo} alt="logo ReConnect" />
-        <h1>ReConnect</h1>
+        <h1>Ensemble, partageons avec bienveillance.</h1>
       </div>
       <div className="nav-links">
         <h2>Accueil</h2>

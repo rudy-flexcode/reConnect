@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0% 2% 0% 0%;
-  background-color: #fefefe;
+  background-color: #f7f7f7;
 }
 
 header .logo-container {
@@ -13,7 +13,7 @@ header .logo-container {
 }
 
 header img {
-  width: 40%;
+  width: 30%;
 }
 
 header h1 {

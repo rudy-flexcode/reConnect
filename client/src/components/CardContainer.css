@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e4e2cf;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 10rem;
+  transition: transform 0.3s;
+  padding: 2rem;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}

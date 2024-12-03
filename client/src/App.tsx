@@ -1,11 +1,15 @@
-import type React from "react";
-import CardContainer from "./components/CardContainer";
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <CardContainer />
-    </div>
+    <>
+      <Header />
+      <Outlet />
+      <Footer/>
+    </>
   );
 };
 

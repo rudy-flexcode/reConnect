@@ -1,0 +1,19 @@
+import Logo from "../assets/logo.png";
+import "../styles/Header.css";
+
+const Header = () => {
+  return (
+    <header>
+      <div className="logo-container">
+        <img src={Logo} alt="logo ReConnect" />
+        <h1>Ensemble, partageons avec bienveillance.</h1>
+      </div>
+      <div className="nav-links">
+        <h2>Accueil</h2>
+        <h2>Biens et services</h2>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-align: center;
   z-index: 10;
+  margin-top: 2rem;
 }
 
 h2 {

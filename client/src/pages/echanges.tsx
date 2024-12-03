@@ -13,15 +13,28 @@ const Echanges = () => {
       .then((data) => setArticles(data));
   }, []);
 
+  const changeWantedValue = (id: number) => {
+    setArticles((currentArticles) =>
+      currentArticles.map((wantedArticle) =>
+        wantedArticle.id === id
+          ? { ...wantedArticle, disponibilite: !wantedArticle.disponibilite }
+          : wantedArticle,
+      ),
+    );
+  };
+
   useEffect(() => {
-    const wanted = articles.filter((article) => !article.disponibilite);
+    const wanted = articles.filter((article) => article.disponibilite);
     setIsWanted(wanted);
   }, [articles]);
 
   return (
     <div>
       <h1>POUETTE ECHANGE</h1>
-      <CardContainer />
+      <CardContainer
+        changeWantedValue={changeWantedValue}
+        articles={articles}
+      />
       <WantedArticles isWanted={isWanted} />
     </div>
   );

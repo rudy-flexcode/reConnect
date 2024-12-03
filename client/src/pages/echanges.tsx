@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import CardContainer from "../components/CardContainer";
 import WantedArticles from "../components/WantedArticles";
 import type { ArticleType } from "../lib/definition";
 
@@ -19,6 +20,8 @@ const Echanges = () => {
 
   return (
     <div>
+      <h1>POUETTE ECHANGE</h1>
+      <CardContainer />
       <WantedArticles isWanted={isWanted} />
     </div>
   );

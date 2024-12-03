@@ -1,7 +1,7 @@
-import Filters from "../components/FilterBar";
-import FiltersLoc from "../components/FilterLocation";
 import { useEffect, useState } from "react";
 import CardContainer from "../components/CardContainer";
+import Filters from "../components/FilterBar";
+import FiltersLoc from "../components/FilterLocation";
 import WantedArticles from "../components/WantedArticles";
 import type { ArticleType } from "../lib/definition";
 

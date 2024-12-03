@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import CardContainer from "../components/CardContainer";
 import WantedArticles from "../components/WantedArticles";
 import type { ArticleType } from "../lib/definition";
 
@@ -13,16 +12,6 @@ const Echanges = () => {
       .then((data) => setArticles(data));
   }, []);
 
-  const changeWantedValue = (id: number) => {
-    setArticles((currentArticles) =>
-      currentArticles.map((wantedArticle) =>
-        wantedArticle.id === id
-          ? { ...wantedArticle, disponibilite: !wantedArticle.disponibilite }
-          : wantedArticle,
-      ),
-    );
-  };
-
   useEffect(() => {
     const wanted = articles.filter((article) => !article.disponibilite);
     setIsWanted(wanted);
@@ -30,10 +19,6 @@ const Echanges = () => {
 
   return (
     <div>
-      <CardContainer
-        articles={articles}
-        changeWantedValue={changeWantedValue}
-      />
       <WantedArticles isWanted={isWanted} />
     </div>
   );

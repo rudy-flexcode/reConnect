@@ -30,6 +30,15 @@ h2 {
   .footer {
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin: 6% 0 0 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .conditions {
+    font-size: 1em;
+    margin: 0 4% 5% 4%;
   }
 
   .footer-top {

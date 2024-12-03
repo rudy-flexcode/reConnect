@@ -1,15 +1,19 @@
-interface CardProps {
-  title: string;
-  description: string;
-}
+import type { ArticleType } from "../lib/definition";
 
-const Card: React.FC<CardProps> = ({ title, description }) => (
-  <div className="card">
-    <div className="card-content">
-      <h3>{title}</h3>
-      <p>{description}</p>
+const Card = ({
+  card,
+  changeWantedValue,
+}: { card: ArticleType; changeWantedValue: (id: number) => void }) => {
+  return (
+    <div className="card">
+      <div className="card-content">
+        <h3>{card.nom}</h3>
+        <p>{card.description}</p>
+        <button type="button" onClick={() => changeWantedValue(card.id)}>
+          oooooo
+        </button>
+      </div>
     </div>
-  </div>
-);
-
+  );
+};
 export default Card;

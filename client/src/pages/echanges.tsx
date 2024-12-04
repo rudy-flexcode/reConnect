@@ -34,11 +34,14 @@ const Echanges = () => {
     <div className="echanges-main">
       <h1 className="echanges-titre">Les Échanges Proposés</h1>
       <div className="echange-content">
-        <CardContainer
-          changeWantedValue={changeWantedValue}
-          articles={articles}
-        />
+        <div className="echange-cards">
+          <CardContainer
+            changeWantedValue={changeWantedValue}
+            articles={articles}
+          />
+        </div>
         <div className="wanted-container">
+          <h2 className="wanted-title">Échanges Choisis</h2>
           <WantedArticles isWanted={isWanted} />
         </div>
       </div>

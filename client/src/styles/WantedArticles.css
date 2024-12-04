@@ -2,5 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
 
 .wanted-card {
-  width: 200px;
+  width: 250px;
+  background-color: #bfd0c1;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.wanted-titlecard {
+  font-family: "Rufina", serif;
+  padding-bottom: 0.5em;
+}
+
+@media (min-width: 1024px) {
+  .wanted-card {
+    width: 300px;
+    padding: 0.5em;
+    margin: 2em;
+    font-family: "Martel Sans", sans-serif;
+  }
 }

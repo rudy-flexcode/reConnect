@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -10,12 +12,8 @@
   background-color: #e4e2cf;
   border-radius: 10px;
   box-shadow:
-    rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(
-      0,
-      0,
-      0,
-      0.2
-    ) 0px -3px 0px inset;
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   width: 15rem;
   transition: transform 0.3s;
   padding: 2rem;
@@ -43,8 +41,7 @@
   color: black;
   cursor: pointer;
   display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Martel Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -56,7 +53,7 @@
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: color 100ms;
+  transition: background-color 0.3s;
   vertical-align: baseline;
   user-select: none;
   -webkit-user-select: none;

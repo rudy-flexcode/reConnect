@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import CardContainer from "../components/CardContainer";
-import Filters from "../components/FilterBar";
-import FiltersLoc from "../components/FilterLocation";
 import WantedArticles from "../components/WantedArticles";
 import type { ArticleType } from "../lib/definition";
 import "../styles/echanges.css";
@@ -35,10 +33,6 @@ const Echanges = () => {
   return (
     <div className="echanges-main">
       <h1 className="echanges-titre">Les Échanges Proposés</h1>
-      <div className="echanges-filters">
-        <Filters />
-        <FiltersLoc />
-      </div>
       <div className="echange-content">
         <CardContainer
           changeWantedValue={changeWantedValue}

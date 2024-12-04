@@ -5,4 +5,5 @@ export type ArticleType = {
   categorie: string;
   disponibilite: boolean;
   localisation: string;
+  image: string;
 };

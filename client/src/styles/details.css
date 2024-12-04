@@ -7,6 +7,16 @@
   align-items: center;
   gap: 3em;
 }
+.details-article {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  background-color: #eceae4;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 0.5em;
+}
 
 .details-description {
   display: flex;
@@ -36,4 +46,20 @@
   font-family: "Rufina", serif;
   font-weight: 700;
   border-radius: 0.25em;
+}
+
+.details-img {
+  width: 10em;
+}
+
+@media (min-width: 1024px) {
+  .details-article {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    align-items: center;
+    background-color: #eceae4;
+    padding: 3em;
+    border-radius: 0.5em;
+  }
 }

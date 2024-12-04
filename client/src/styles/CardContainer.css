@@ -2,10 +2,18 @@
 
 .card-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding-top: 2rem;
   gap: 2rem;
+  align-items: center;
+}
+
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 5em;
 }
 
 .card {

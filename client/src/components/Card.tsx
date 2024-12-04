@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import type { ArticleType } from "../lib/definition";
 
 const Card = ({

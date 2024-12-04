@@ -18,3 +18,47 @@
   flex-direction: row;
   gap: 2em;
 }
+
+.echange-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.wanted-container {
+  background-color: #eceae4;
+  border-radius: 0.5em;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wanted-title {
+  font-family: "Rufina", serif;
+  margin-top: 0.2em;
+}
+
+@media (min-width: 1024px) {
+  .wanted-title {
+    font-family: "Rufina", serif;
+    margin-top: 1em;
+  }
+
+  .wanted-container {
+    background-color: #eceae4;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  }
+
+  .echange-cards {
+    width: 85%;
+  }
+
+  .echange-content {
+    display: flex;
+    flex-direction: row;
+  }
+}

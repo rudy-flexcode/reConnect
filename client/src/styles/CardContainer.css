@@ -67,3 +67,8 @@
 .validate:focus {
   background-color: #bfd0c1;
 }
+
+.card-image {
+  width: 5rem;
+  margin: 2rem;
+}

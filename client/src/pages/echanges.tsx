@@ -12,7 +12,8 @@ const Echanges = () => {
   useEffect(() => {
     fetch("https://api-re-connect-t3ln.vercel.app/api/resources")
       .then((response) => response.json())
-      .then((data) => setArticles(data));
+      .then((data) => setArticles(data))
+      .catch((error) => console.error(error));
   }, []);
 
   const changeWantedValue = (id: number) => {

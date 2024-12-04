@@ -23,11 +23,10 @@
     rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   width: 17rem;
-
   min-width: 17rem;
-
   max-width: 30rem;
-
+  height: 22rem;
+  max-height: 25rem;
   transition: transform 0.3s;
   padding: 1rem;
   display: flex;
@@ -41,7 +40,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -67,14 +65,13 @@
   display: inline-block;
   font-family: "Martel Sans", sans-serif;
   font-size: 14px;
-  font-weight: 500;
   height: 30px;
   line-height: 15px;
   list-style: none;
-  margin-top: 5%;
+  margin-top: 75%;
   outline: none;
   padding: 10px 16px;
-  position: relative;
+  position: absolute;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -91,12 +88,13 @@
 
 .card-image {
   width: 5em;
-  margin: 1em;
+  margin-top: 2em;
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .validate {
-    margin-top: 17%;
+    margin-top: 21%;
     padding: 10px 16px;
     position: absolute;
     text-align: center;
@@ -114,7 +112,36 @@
     max-height: 23rem;
     padding: 1rem;
     display: flex;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1600px) {
+  .validate {
+    margin-top: 16%;
+    padding: 10px 16px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .card {
+    width: 17rem;
+    max-width: 17rem;
+    max-height: 23rem;
+    padding: 1rem;
+    display: flex;
+    padding-bottom: 5rem;
+    padding-top: 2.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;

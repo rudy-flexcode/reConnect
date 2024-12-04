@@ -19,7 +19,7 @@ function Filters() {
     <select
       className="filter-selector"
       name="selectedType"
-      value={selectedType?.name || ""}
+      value={selectedType?.name}
       onChange={(e) => handleSelectType(e.target.value)}
     >
       <option value="">Toute les ressources</option>

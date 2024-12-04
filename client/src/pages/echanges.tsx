@@ -4,6 +4,7 @@ import Filters from "../components/FilterBar";
 import FiltersLoc from "../components/FilterLocation";
 import WantedArticles from "../components/WantedArticles";
 import type { ArticleType } from "../lib/definition";
+import "../styles/echanges.css";
 
 const Echanges = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
@@ -32,15 +33,19 @@ const Echanges = () => {
   }, [articles]);
 
   return (
-    <div>
-      <h1>POUETTE ECHANGE</h1>
-      <Filters />
-      <FiltersLoc />
-      <CardContainer
-        changeWantedValue={changeWantedValue}
-        articles={articles}
-      />
-      <WantedArticles isWanted={isWanted} />
+    <div className="echanges-main">
+      <h1 className="echanges-titre">Les Échanges Proposés</h1>
+      <div className="echanges-filters">
+        <Filters />
+        <FiltersLoc />
+      </div>
+      <div className="echange-content">
+        <CardContainer
+          changeWantedValue={changeWantedValue}
+          articles={articles}
+        />
+        <WantedArticles isWanted={isWanted} />
+      </div>
     </div>
   );
 };

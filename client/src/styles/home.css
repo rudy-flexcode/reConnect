@@ -2,33 +2,27 @@
 
 .acceuil-container {
   border: 3px solid #ccc;
-  padding: 20px;
-  margin: 20px;
+  margin: 10px;
+  padding: 10%;
   border-radius: 8px;
   max-width: 100%;
+  position: static;
 }
 
 .image-container {
   display: flex;
+  justify-content: center;
 }
 
 .image {
-  max-width: 25%;
+  max-width: 100%;
   height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: 10%;
 }
 
 .text-container {
   max-width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: -25%;
-  margin-left: 50%;
-  margin-right: 5%;
+  text-align: center;
+  margin: 20px 0;
   font-family: "Martel Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -36,9 +30,7 @@
 
 .button-container {
   text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20%;
+  margin: 20px 0;
 }
 
 .button {
@@ -49,7 +41,6 @@
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 2%;
   font-family: "Martel Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -58,43 +49,81 @@
 .button:hover {
   background-color: #0056b3;
 }
-@media (max-width: 896px) {
+
+/* Media Queries pour les écrans de taille moyenne et plus grande */
+@media (min-width: 768px) {
   .acceuil-container {
-    border: 3px solid #ccc;
-    margin: 10px;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7%;
+    margin-bottom: -10%;
     max-width: 100%;
+    padding: 5%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -13%;
+    margin-bottom: -12%;
   }
 
   .image {
-    max-width: 80%;
-    height: auto;
+    max-width: 60%;
+    margin-top: 30%;
   }
 
   .text-container {
-    max-width: 100%;
-    text-align: center;
-    margin: 25px 0;
+    max-width: 50%;
+    text-align: left;
+    margin: 0 20px;
+    font-size: 80%;
+    padding-top: 3%;
   }
 
   .button-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 42%;
+    padding-top: 4%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .acceuil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    max-width: 100%;
+    padding: 5%;
   }
 
-  .button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    cursor: pointer;
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .button:hover {
-    background-color: #0056b3;
+  .image {
+    max-width: 50%;
+  }
+
+  .text-container {
+    max-width: 50%;
+    text-align: left;
+    margin: 0 20px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    margin-left: 40%;
   }
 }

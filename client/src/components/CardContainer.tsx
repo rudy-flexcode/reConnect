@@ -1,5 +1,5 @@
 import Card from "./Card";
-import "./CardContainer.css";
+import "../styles/CardContainer.css";
 import type { ArticleType } from "../lib/definition";
 
 const CardContainer = ({

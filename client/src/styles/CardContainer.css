@@ -9,8 +9,15 @@
 .card {
   background-color: #e4e2cf;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(
+      0,
+      0,
+      0,
+      0.2
+    ) 0px -3px 0px inset;
   width: 15rem;
+  transition: transform 0.3s;
   padding: 2rem;
 }
 
@@ -26,4 +33,37 @@
 .card-content p {
   font-size: 14px;
   color: #555;
+}
+
+.validate {
+  background-color: #6a8e66;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.validate:hover,
+.validate:focus {
+  background-color: #bfd0c1;
 }

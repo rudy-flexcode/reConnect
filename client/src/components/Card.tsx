@@ -9,8 +9,12 @@ const Card = ({
       <div className="card-content">
         <h3>{card.nom}</h3>
         <p>{card.description}</p>
-        <button type="button" onClick={() => changeWantedValue(card.id)}>
-          oooooo
+        <button
+          className="validate"
+          type="button"
+          onClick={() => changeWantedValue(card.id)}
+        >
+          Valider
         </button>
       </div>
     </div>

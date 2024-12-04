@@ -35,19 +35,20 @@
 
 .button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #6a8e66;
   color: white;
   border: none;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.3s;
   font-family: "Martel Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #bfd0c1;
 }
 
 /* Media Queries pour les écrans de taille moyenne et plus grande */
@@ -97,7 +98,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -5%;
+    margin-top: 0%;
     margin-bottom: 2%;
     max-width: 100%;
     padding: 5%;

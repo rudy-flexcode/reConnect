@@ -10,8 +10,12 @@ const Header = () => {
         <h1>Ensemble, partageons avec bienveillance.</h1>
       </div>
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/echanges">Bien et Services</Link>
+        <Link to="/" className="bouton home">
+          Home
+        </Link>
+        <Link to="/echanges" className="bouton echanges">
+          Bien et Services
+        </Link>
       </div>
     </header>
   );

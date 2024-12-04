@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
 header {
   display: flex;
   justify-content: space-between;
@@ -29,13 +31,41 @@ header .nav-links {
   gap: 2rem;
 }
 
-header .nav-links h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #212529;
+.bouton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s;
 }
+
+.bouton:hover {
+  background-color: #6a8e66;
+}
+
+.home {
+  background-color: #6a8e66;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.echanges {
+  background-color: #6a8e66;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.home:hover {
+  background-color: #bfd0c1;
+}
+
+.echanges:hover {
+  background-color: #bfd0c1;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;

@@ -11,7 +11,7 @@ function Home() {
         </div>
         <div className="text-container">
           <p>
-            ReConnecte est une plateforme dédiée à la bienveillance et à
+            ReConnect est une plateforme dédiée à la bienveillance et à
             l'entraide communautaire. Notre mission est de faciliter l'échange
             de services et d'objets entre voisins, amis, et membres de la
             communauté pour renforcer les liens sociaux et favoriser un esprit

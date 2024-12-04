@@ -9,9 +9,15 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-top">
           <div className="reseaux-sociaux">
-            <img src={facebook} alt="logo facebook" />
-            <img src={instagram} alt="logo instagram" />
-            <img src={linkedin} alt="logo linkedin" />
+            <a href="https://www.facebook.com/">
+              <img src={facebook} alt="logo facebook" />
+            </a>
+            <a href="https://www.instagram.com/">
+              <img src={instagram} alt="logo instagram" />
+            </a>
+            <a href="https://www.linkedin.com/">
+              <img src={linkedin} alt="logo linkedin" />
+            </a>
           </div>
           <div className="conditions">
             <h2>Conditions générales d'utilisation</h2>
@@ -24,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="copysight">
+        <div className="copyright">
           <p>© ReConnect Wilders 2024 🖤</p>
         </div>
       </div>

@@ -30,7 +30,7 @@ const CardContainer = ({
   return (
     <div className="card-container">
       <div className="card-filter">
-        <select id="card-selcetor" onChange={handleLocation}>
+        <select id="card-selector" onChange={handleLocation}>
           <option value="">All</option>
           {locations.length > 0 &&
             locations.map((l) => (
@@ -40,15 +40,17 @@ const CardContainer = ({
             ))}
         </select>
       </div>
-      {articles
-        ?.filter((card) => card.localisation.includes(currentLocations))
-        .map((card) => (
-          <Card
-            key={card.id}
-            changeWantedValue={changeWantedValue}
-            card={card}
-          />
-        ))}
+      <div className="card-display">
+        {articles
+          ?.filter((card) => card.localisation.includes(currentLocations))
+          .map((card) => (
+            <Card
+              key={card.id}
+              changeWantedValue={changeWantedValue}
+              card={card}
+            />
+          ))}
+      </div>
     </div>
   );
 };

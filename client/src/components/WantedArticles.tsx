@@ -1,11 +1,17 @@
 import type { ArticleType } from "../lib/definition";
+import "../styles/WantedArticles.css";
 
 const WantedArticles = ({ isWanted }: { isWanted: ArticleType[] }) => {
   return (
     <div className="wanted-container">
-      {isWanted?.map((w) => (
-        <p key={w.id}>{w.nom}</p>
-      ))}
+      <div className="wanted-card">
+        {isWanted?.map((w) => (
+          <section key={w.id}>
+            <p>{w.nom}</p>
+            <p>{w.description}</p>
+          </section>
+        ))}
+      </div>
     </div>
   );
 };

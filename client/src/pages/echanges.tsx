@@ -38,7 +38,9 @@ const Echanges = () => {
           changeWantedValue={changeWantedValue}
           articles={articles}
         />
-        <WantedArticles isWanted={isWanted} />
+        <div className="wanted-container">
+          <WantedArticles isWanted={isWanted} />
+        </div>
       </div>
     </div>
   );

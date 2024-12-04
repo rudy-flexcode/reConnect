@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+
+.details-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.details-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.details-h1 {
+  font-family: "Rufina", serif;
+  font-size: xx-large;
+}
+
+.details-h2 {
+  font-family: "Rufina", serif;
+  font-size: x-large;
+}
+
+.details-content {
+  font-family: "Martel-Sans", sans-serif;
+  font-weight: 500;
+}
+
+.details-back {
+  color: #eceae4;
+  background-color: #6a8e66;
+  padding: 0.5em;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  border-radius: 0.25em;
+}

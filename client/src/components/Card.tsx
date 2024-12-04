@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import type { ArticleType } from "../lib/definition";
 
 const Card = ({
@@ -14,11 +15,13 @@ const Card = ({
         <p>{card.description}</p>
 
         {card.image && (
-          <img
-            src={`https://api-re-connect-t3ln.vercel.app${card.image}`}
-            alt={`Img de ${card.nom}`}
-            className="card-image"
-          />
+          <NavLink to={`/details/${card.id}`}>
+            <img
+              src={`https://api-re-connect-t3ln.vercel.app${card.image}`}
+              alt={`Img de ${card.nom}`}
+              className="card-image"
+            />
+          </NavLink>
         )}
 
         <button
